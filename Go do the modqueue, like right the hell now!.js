@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Go do the modqueue, like right the hell now!
-// @version      1
+// @version      1.1
 // @description  Assists in the clearing of the modqueue, clearly.
 // @author       Kawa
 // @match        https://*.donmai.us/*
@@ -22,7 +22,7 @@
     const Evazion = GM_getResourceURL('Evazion');
 
 // Select modqueue count
-   const mqBadge = document.querySelector('#subnav-modqueue-link .badge-blue')
+   const mqBadge = document.querySelector('#subnav-modqueue .badge-blue')
    if (mqBadge)
        {
         const modqueueCount = parseInt(mqBadge.textContent.trim())
